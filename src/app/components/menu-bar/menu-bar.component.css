@@ -1,0 +1,9 @@
+.cMenuBar > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.cMenuBar > ul > li {
+  margin: 20px;
+  list-style: none;
+}

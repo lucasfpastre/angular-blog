@@ -1,0 +1,11 @@
+ .ctArticles {
+  margin: 30px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+
+ header {
+  display: flex;
+  justify-content: center;
+ }

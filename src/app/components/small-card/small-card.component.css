@@ -1,0 +1,42 @@
+.cSmallCard {
+  width: 40vw;
+  margin-bottom: 15px;
+}
+
+.cSmallCardContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgSmallCard {
+  max-width: 100%;
+}
+
+.imgSmallCard > img {
+  object-fit: cover;
+  width: 8vw;
+  max-width: 250px;
+  height: auto;
+  vertical-align: top;
+  border-radius: 5px;
+}
+
+.dataSmallCard {
+  margin: 10px;
+}
+
+.authorSmallCard > p {
+  font-size: 1vw;
+  color: #666666;
+  margin-top: 5px;
+}
+
+.titleSmallCard > h2 {
+  font-weight: bold;
+  font-size: 2vw;
+  margin-top: 5px;
+}
+
+.dvSmallCard {
+  margin-top: 15px;
+}
