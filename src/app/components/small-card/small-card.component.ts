@@ -1,4 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { localData } from '../../data/localData'
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-small-card',
@@ -8,13 +11,27 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SmallCardComponent implements OnInit {
 
   @Input()
-  bookCover: string = "https://storage.googleapis.com/du-prd/books/images/9781649374042.jpg";
+  bookCover: string = "";
   @Input()
-  bookTitle: string = "FOURTH WING";
+  bookTitle: string = "";
   @Input()
-  bookAuthor: string = "Rebecca Yarros";
+  bookAuthor: string = "";
+  @Input()
+  bookId: string | null = "";
+
+  constructor(
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
+    this.setValues(this.bookId);
+  }
+
+  setValues(id: string | null) {
+    const result = localData.filter(article => article.id)[Number(id)];
+    this.bookCover = result.cover;
+    this.bookTitle = result.title;
+    this.bookAuthor = result.author;
 
   }
 

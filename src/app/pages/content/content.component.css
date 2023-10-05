@@ -1,0 +1,41 @@
+.contentContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContainer > a {
+  text-decoration: none;
+  font-size: 1vw;
+}
+
+.contentCover > img {
+  margin-top: 10px;
+  border: #888888 solid 5px;
+  border-radius: 5px;
+  min-width: 15vw;
+  width: 15vw;
+  max-width: 500px;
+  height: auto;
+}
+
+.contentTitle > h2 > a {
+  font-weight: bold;
+  font-size: 2vw;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.contentAuthor > p {
+  font-size: 1vw;
+  color: #666666;
+}
+
+.contentDesc > p {
+  color: #888888;
+  font-size: 1.3vw;
+  margin-top: 5px;
+}

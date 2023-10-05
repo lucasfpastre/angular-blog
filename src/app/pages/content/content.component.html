@@ -1,0 +1,20 @@
+<div class="contentContainer">
+  <a [routerLink]="['']"> << VOLTAR << </a>
+  <div class="contentCover">
+    <img src="{{ bookCover }}" alt="Book">
+  </div>
+  <div class="contentTitle">
+    <h2>
+      <a href="{{ bookUrl }}">
+        {{ bookTitle }}
+      </a>
+    </h2>
+    <hr>
+  </div>
+  <div class="contentAuthor">
+    <p>by {{ bookAuthor }}</p>
+  </div>
+  <div class="contentDesc">
+    <p>{{ bookDesc }}</p>
+  </div>
+</div>
