@@ -1,24 +1,24 @@
 <div class="cBigCard">
   <div class="imgBigCard">
-    <img src="https://storage.googleapis.com/du-prd/books/images/9780593299425.jpg"
+    <img src="{{ bookCover }}"
     alt="Book"
     >
   </div>
   <div class="titleBigCard">
     <h2>
-      <a href="https://www.amazon.com/dp/0593299426?tag=NYTBSREV-20">
-        THE LAST DEVIL TO DIE
+      <a href=" {{ bookUrl }}">
+        {{ bookTitle }}
       </a>
     </h2>
   </div>
   <div class="authorBigCard">
     <p>
-      by Richard Osman
+      by {{ bookAuthor }}
     </p>
   </div>
   <div class="descBigCard">
     <p>
-      The fourth book in the Thursday Murder Club series. When an old friend is killed, the gang comes up against drug dealers, art forgers and online fraudsters.
+      {{ bookIntro }}
     </p>
   </div>
 </div>

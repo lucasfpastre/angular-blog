@@ -4,6 +4,10 @@
 }
 
 .cMenuBar > ul > li {
-  margin: 20px;
+  margin: 10px;
   list-style: none;
+}
+
+.tMenuBar {
+  font-size: 1vw;
 }
